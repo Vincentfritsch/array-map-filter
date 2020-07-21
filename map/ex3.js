@@ -62,9 +62,9 @@ Expected OUTPUT for this sample:
  */
 
 function getMoviesFreshness(movies) {
-    const movi = movies.map(movie => { movie.label = (movie.rating<60 ? "rotten" : movie.rating>75 ? "certified fresh" :"fresh")
+    return  movies.map(movie => { movie.label = (movie.rating<60 ? "rotten" : movie.rating>75 ? "certified fresh" :"fresh")
         return  movie })
-    return movi
+
 }
 
 
